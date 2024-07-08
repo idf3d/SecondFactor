@@ -1,0 +1,676 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A34996D62122C4D700E01EF4 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34996D52122C4D700E01EF4 /* AuthManager.swift */; };
+		A34D63DF210F9F2A00652109 /* PasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34D63DE210F9F2A00652109 /* PasswordViewController.swift */; };
+		A3512C1B212DEF6300A919C7 /* Base32.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3512C1A212DEF6200A919C7 /* Base32.swift */; };
+		A3512C1D212DF92600A919C7 /* SetPINViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3512C1C212DF92600A919C7 /* SetPINViewController.swift */; };
+		A360F99E21237D5500CDFDC1 /* DeviceWaiterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A360F99D21237D5500CDFDC1 /* DeviceWaiterViewController.swift */; };
+		A364F77D2BFA799F0048D7DA /* YKDerivedKeyTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A364F77C2BFA799F0048D7DA /* YKDerivedKeyTest.swift */; };
+		A364F77F2BFA79B30048D7DA /* DataExtensionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A364F77E2BFA79B30048D7DA /* DataExtensionTest.swift */; };
+		A364F7812BFAA1D50048D7DA /* Base32Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = A364F7802BFAA1D50048D7DA /* Base32Test.swift */; };
+		A36807BF20F3CAA30074244A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36807BE20F3CAA30074244A /* AppDelegate.swift */; };
+		A36807C120F3CAA30074244A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36807C020F3CAA30074244A /* ViewController.swift */; };
+		A36807C320F3CAA80074244A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A36807C220F3CAA80074244A /* Assets.xcassets */; };
+		A36807C620F3CAA80074244A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A36807C420F3CAA80074244A /* Main.storyboard */; };
+		A36807D020F3CFDB0074244A /* YKAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36807CF20F3CFDB0074244A /* YKAlgorithm.swift */; };
+		A36807D220F3D18A0074244A /* YKSelect.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36807D120F3D18A0074244A /* YKSelect.swift */; };
+		A36807D420F3D9320074244A /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36807D320F3D9320074244A /* Data.swift */; };
+		A36807D620F3DDC90074244A /* YKValidate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36807D520F3DDC90074244A /* YKValidate.swift */; };
+		A36C3B9721470AAA0046F68F /* YKReset.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36C3B9621470AAA0046F68F /* YKReset.swift */; };
+		A372D8C720F42CC0009E9CEE /* YKDerivedKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = A372D8C620F42CC0009E9CEE /* YKDerivedKey.swift */; };
+		A372D8C920F66160009E9CEE /* YKCalculateAll.swift in Sources */ = {isa = PBXBuildFile; fileRef = A372D8C820F66160009E9CEE /* YKCalculateAll.swift */; };
+		A3797C572105156E000048D0 /* YKDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3797C562105156E000048D0 /* YKDevice.swift */; };
+		A38887EC21295469006B5488 /* ErrorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38887EB21295469006B5488 /* ErrorViewController.swift */; };
+		A38887EE2129ADEE006B5488 /* YKCalculate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38887ED2129ADEE006B5488 /* YKCalculate.swift */; };
+		A3F603032110FC7600459718 /* KeychainItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F603022110FC7600459718 /* KeychainItem.swift */; };
+		A3F60307211209DA00459718 /* YKDelete.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F60306211209DA00459718 /* YKDelete.swift */; };
+		A3F6030921121CD100459718 /* YKSetCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F6030821121CD100459718 /* YKSetCode.swift */; };
+		A3F6030E211B303800459718 /* TableView+Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F6030D211B303800459718 /* TableView+Menu.swift */; };
+		A3F60310211B4FD400459718 /* DeleteItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F6030F211B4FD400459718 /* DeleteItemViewController.swift */; };
+		A3F60313211C639B00459718 /* NewCredentialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F60312211C639B00459718 /* NewCredentialViewController.swift */; };
+		A3FCC81B20F94D2F00378250 /* DragDropDestinationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FCC81A20F94D2F00378250 /* DragDropDestinationView.swift */; };
+		A3FCC81D20F95BFB00378250 /* QRDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FCC81C20F95BFB00378250 /* QRDetector.swift */; };
+		A3FCC81F20F9620D00378250 /* YKCredential.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FCC81E20F9620D00378250 /* YKCredential.swift */; };
+		A3FCC82220F96E3D00378250 /* URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FCC82120F96E3D00378250 /* URL.swift */; };
+		B534888220F5C8C30005EC9C /* APDU.swift in Sources */ = {isa = PBXBuildFile; fileRef = B534888120F5C8C30005EC9C /* APDU.swift */; };
+		B534888420F5CC2C0005EC9C /* YKPacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = B534888320F5CC2C0005EC9C /* YKPacket.swift */; };
+		B534888820F5D3090005EC9C /* APDUResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B534888720F5D3090005EC9C /* APDUResponse.swift */; };
+		B55DB5D620FF4C5C00A771BD /* YKPut.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55DB5D520FF4C5C00A771BD /* YKPut.swift */; };
+		B5CD5ACC210A187100BB4B7D /* YKError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CD5ACB210A187100BB4B7D /* YKError.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A364F7772BFA79890048D7DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A36807B320F3CAA20074244A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A36807BA20F3CAA30074244A;
+			remoteInfo = ykoath;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A34996D52122C4D700E01EF4 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		A34D63DE210F9F2A00652109 /* PasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordViewController.swift; sourceTree = "<group>"; };
+		A3512C1A212DEF6200A919C7 /* Base32.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Base32.swift; sourceTree = "<group>"; };
+		A3512C1C212DF92600A919C7 /* SetPINViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetPINViewController.swift; sourceTree = "<group>"; };
+		A360F99D21237D5500CDFDC1 /* DeviceWaiterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceWaiterViewController.swift; sourceTree = "<group>"; };
+		A364F7732BFA79890048D7DA /* ykoathTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ykoathTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A364F77C2BFA799F0048D7DA /* YKDerivedKeyTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YKDerivedKeyTest.swift; sourceTree = "<group>"; };
+		A364F77E2BFA79B30048D7DA /* DataExtensionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataExtensionTest.swift; sourceTree = "<group>"; };
+		A364F7802BFAA1D50048D7DA /* Base32Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Base32Test.swift; sourceTree = "<group>"; };
+		A36807BB20F3CAA30074244A /* Second Factor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Second Factor.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A36807BE20F3CAA30074244A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A36807C020F3CAA30074244A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A36807C220F3CAA80074244A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A36807C520F3CAA80074244A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A36807C720F3CAA80074244A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A36807C820F3CAA80074244A /* ykoath.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ykoath.entitlements; sourceTree = "<group>"; };
+		A36807CF20F3CFDB0074244A /* YKAlgorithm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YKAlgorithm.swift; sourceTree = "<group>"; };
+		A36807D120F3D18A0074244A /* YKSelect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YKSelect.swift; sourceTree = "<group>"; };
+		A36807D320F3D9320074244A /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		A36807D520F3DDC90074244A /* YKValidate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YKValidate.swift; sourceTree = "<group>"; };
+		A36C3B9621470AAA0046F68F /* YKReset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YKReset.swift; sourceTree = "<group>"; };
+		A372D8C620F42CC0009E9CEE /* YKDerivedKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YKDerivedKey.swift; sourceTree = "<group>"; };
+		A372D8C820F66160009E9CEE /* YKCalculateAll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YKCalculateAll.swift; sourceTree = "<group>"; };
+		A3797C562105156E000048D0 /* YKDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YKDevice.swift; sourceTree = "<group>"; };
+		A38887EB21295469006B5488 /* ErrorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorViewController.swift; sourceTree = "<group>"; };
+		A38887ED2129ADEE006B5488 /* YKCalculate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YKCalculate.swift; sourceTree = "<group>"; };
+		A3F603022110FC7600459718 /* KeychainItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainItem.swift; sourceTree = "<group>"; };
+		A3F60306211209DA00459718 /* YKDelete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YKDelete.swift; sourceTree = "<group>"; };
+		A3F6030821121CD100459718 /* YKSetCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YKSetCode.swift; sourceTree = "<group>"; };
+		A3F6030D211B303800459718 /* TableView+Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TableView+Menu.swift"; sourceTree = "<group>"; };
+		A3F6030F211B4FD400459718 /* DeleteItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteItemViewController.swift; sourceTree = "<group>"; };
+		A3F60312211C639B00459718 /* NewCredentialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCredentialViewController.swift; sourceTree = "<group>"; };
+		A3FCC81A20F94D2F00378250 /* DragDropDestinationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragDropDestinationView.swift; sourceTree = "<group>"; };
+		A3FCC81C20F95BFB00378250 /* QRDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRDetector.swift; sourceTree = "<group>"; };
+		A3FCC81E20F9620D00378250 /* YKCredential.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YKCredential.swift; sourceTree = "<group>"; };
+		A3FCC82120F96E3D00378250 /* URL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URL.swift; sourceTree = "<group>"; };
+		B534888120F5C8C30005EC9C /* APDU.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APDU.swift; sourceTree = "<group>"; };
+		B534888320F5CC2C0005EC9C /* YKPacket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YKPacket.swift; sourceTree = "<group>"; };
+		B534888720F5D3090005EC9C /* APDUResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APDUResponse.swift; sourceTree = "<group>"; };
+		B55DB5D520FF4C5C00A771BD /* YKPut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YKPut.swift; sourceTree = "<group>"; };
+		B5CD5ACB210A187100BB4B7D /* YKError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YKError.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A364F7702BFA79890048D7DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A36807B820F3CAA30074244A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A364F7742BFA79890048D7DA /* ykoathTest */ = {
+			isa = PBXGroup;
+			children = (
+				A364F77C2BFA799F0048D7DA /* YKDerivedKeyTest.swift */,
+				A364F77E2BFA79B30048D7DA /* DataExtensionTest.swift */,
+				A364F7802BFAA1D50048D7DA /* Base32Test.swift */,
+			);
+			path = ykoathTest;
+			sourceTree = "<group>";
+		};
+		A36807B220F3CAA20074244A = {
+			isa = PBXGroup;
+			children = (
+				A36807BD20F3CAA30074244A /* ykoath */,
+				A364F7742BFA79890048D7DA /* ykoathTest */,
+				A36807BC20F3CAA30074244A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A36807BC20F3CAA30074244A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A36807BB20F3CAA30074244A /* Second Factor.app */,
+				A364F7732BFA79890048D7DA /* ykoathTest.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A36807BD20F3CAA30074244A /* ykoath */ = {
+			isa = PBXGroup;
+			children = (
+				A36807CE20F3CFB40074244A /* Yubikey */,
+				A3F60311211B4FE000459718 /* UI */,
+				A3F603022110FC7600459718 /* KeychainItem.swift */,
+				A36807BE20F3CAA30074244A /* AppDelegate.swift */,
+				A3FCC82020F96E2600378250 /* Extensions */,
+				A3FCC81920F94D0E00378250 /* QR */,
+				A3FCC82320F96EE400378250 /* Resources */,
+			);
+			path = ykoath;
+			sourceTree = "<group>";
+		};
+		A36807CE20F3CFB40074244A /* Yubikey */ = {
+			isa = PBXGroup;
+			children = (
+				A3797C562105156E000048D0 /* YKDevice.swift */,
+				B534888520F5D1060005EC9C /* APDU */,
+				B534888620F5D2340005EC9C /* Instructions */,
+				A372D8C620F42CC0009E9CEE /* YKDerivedKey.swift */,
+				A36807CF20F3CFDB0074244A /* YKAlgorithm.swift */,
+				A3FCC81E20F9620D00378250 /* YKCredential.swift */,
+				B5CD5ACB210A187100BB4B7D /* YKError.swift */,
+			);
+			name = Yubikey;
+			sourceTree = "<group>";
+		};
+		A3F60311211B4FE000459718 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				A36807C020F3CAA30074244A /* ViewController.swift */,
+				A34D63DE210F9F2A00652109 /* PasswordViewController.swift */,
+				A3F6030F211B4FD400459718 /* DeleteItemViewController.swift */,
+				A3F60312211C639B00459718 /* NewCredentialViewController.swift */,
+				A34996D52122C4D700E01EF4 /* AuthManager.swift */,
+				A360F99D21237D5500CDFDC1 /* DeviceWaiterViewController.swift */,
+				A38887EB21295469006B5488 /* ErrorViewController.swift */,
+				A3512C1C212DF92600A919C7 /* SetPINViewController.swift */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		A3FCC81920F94D0E00378250 /* QR */ = {
+			isa = PBXGroup;
+			children = (
+				A3FCC81A20F94D2F00378250 /* DragDropDestinationView.swift */,
+				A3FCC81C20F95BFB00378250 /* QRDetector.swift */,
+			);
+			name = QR;
+			sourceTree = "<group>";
+		};
+		A3FCC82020F96E2600378250 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A3512C1A212DEF6200A919C7 /* Base32.swift */,
+				A36807D320F3D9320074244A /* Data.swift */,
+				A3FCC82120F96E3D00378250 /* URL.swift */,
+				A3F6030D211B303800459718 /* TableView+Menu.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		A3FCC82320F96EE400378250 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A36807C220F3CAA80074244A /* Assets.xcassets */,
+				A36807C420F3CAA80074244A /* Main.storyboard */,
+				A36807C720F3CAA80074244A /* Info.plist */,
+				A36807C820F3CAA80074244A /* ykoath.entitlements */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		B534888520F5D1060005EC9C /* APDU */ = {
+			isa = PBXGroup;
+			children = (
+				B534888120F5C8C30005EC9C /* APDU.swift */,
+				B534888320F5CC2C0005EC9C /* YKPacket.swift */,
+				B534888720F5D3090005EC9C /* APDUResponse.swift */,
+			);
+			name = APDU;
+			sourceTree = "<group>";
+		};
+		B534888620F5D2340005EC9C /* Instructions */ = {
+			isa = PBXGroup;
+			children = (
+				A36807D120F3D18A0074244A /* YKSelect.swift */,
+				A36807D520F3DDC90074244A /* YKValidate.swift */,
+				A3F6030821121CD100459718 /* YKSetCode.swift */,
+				A372D8C820F66160009E9CEE /* YKCalculateAll.swift */,
+				A38887ED2129ADEE006B5488 /* YKCalculate.swift */,
+				B55DB5D520FF4C5C00A771BD /* YKPut.swift */,
+				A3F60306211209DA00459718 /* YKDelete.swift */,
+				A36C3B9621470AAA0046F68F /* YKReset.swift */,
+			);
+			name = Instructions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A364F7722BFA79890048D7DA /* ykoathTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A364F77B2BFA79890048D7DA /* Build configuration list for PBXNativeTarget "ykoathTest" */;
+			buildPhases = (
+				A364F76F2BFA79890048D7DA /* Sources */,
+				A364F7702BFA79890048D7DA /* Frameworks */,
+				A364F7712BFA79890048D7DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A364F7782BFA79890048D7DA /* PBXTargetDependency */,
+			);
+			name = ykoathTest;
+			productName = ykoathTest;
+			productReference = A364F7732BFA79890048D7DA /* ykoathTest.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A36807BA20F3CAA30074244A /* ykoath */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A36807CB20F3CAA80074244A /* Build configuration list for PBXNativeTarget "ykoath" */;
+			buildPhases = (
+				A36807B720F3CAA30074244A /* Sources */,
+				A36807B820F3CAA30074244A /* Frameworks */,
+				A36807B920F3CAA30074244A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ykoath;
+			productName = ykoath;
+			productReference = A36807BB20F3CAA30074244A /* Second Factor.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A36807B320F3CAA20074244A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1240;
+				ORGANIZATIONNAME = dflab;
+				TargetAttributes = {
+					A364F7722BFA79890048D7DA = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = A36807BA20F3CAA30074244A;
+					};
+					A36807BA20F3CAA30074244A = {
+						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1020;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = A36807B620F3CAA20074244A /* Build configuration list for PBXProject "ykoath" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A36807B220F3CAA20074244A;
+			productRefGroup = A36807BC20F3CAA30074244A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A36807BA20F3CAA30074244A /* ykoath */,
+				A364F7722BFA79890048D7DA /* ykoathTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A364F7712BFA79890048D7DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A36807B920F3CAA30074244A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A36807C320F3CAA80074244A /* Assets.xcassets in Resources */,
+				A36807C620F3CAA80074244A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A364F76F2BFA79890048D7DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A364F77D2BFA799F0048D7DA /* YKDerivedKeyTest.swift in Sources */,
+				A364F77F2BFA79B30048D7DA /* DataExtensionTest.swift in Sources */,
+				A364F7812BFAA1D50048D7DA /* Base32Test.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A36807B720F3CAA30074244A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5CD5ACC210A187100BB4B7D /* YKError.swift in Sources */,
+				A372D8C920F66160009E9CEE /* YKCalculateAll.swift in Sources */,
+				B534888820F5D3090005EC9C /* APDUResponse.swift in Sources */,
+				A34996D62122C4D700E01EF4 /* AuthManager.swift in Sources */,
+				A36807D420F3D9320074244A /* Data.swift in Sources */,
+				B55DB5D620FF4C5C00A771BD /* YKPut.swift in Sources */,
+				A3F6030E211B303800459718 /* TableView+Menu.swift in Sources */,
+				A372D8C720F42CC0009E9CEE /* YKDerivedKey.swift in Sources */,
+				A3F60313211C639B00459718 /* NewCredentialViewController.swift in Sources */,
+				A38887EE2129ADEE006B5488 /* YKCalculate.swift in Sources */,
+				A34D63DF210F9F2A00652109 /* PasswordViewController.swift in Sources */,
+				A36807D620F3DDC90074244A /* YKValidate.swift in Sources */,
+				A3FCC82220F96E3D00378250 /* URL.swift in Sources */,
+				A3512C1B212DEF6300A919C7 /* Base32.swift in Sources */,
+				A360F99E21237D5500CDFDC1 /* DeviceWaiterViewController.swift in Sources */,
+				A36C3B9721470AAA0046F68F /* YKReset.swift in Sources */,
+				A3F60310211B4FD400459718 /* DeleteItemViewController.swift in Sources */,
+				A3F60307211209DA00459718 /* YKDelete.swift in Sources */,
+				A3F603032110FC7600459718 /* KeychainItem.swift in Sources */,
+				A3F6030921121CD100459718 /* YKSetCode.swift in Sources */,
+				A36807C120F3CAA30074244A /* ViewController.swift in Sources */,
+				A3512C1D212DF92600A919C7 /* SetPINViewController.swift in Sources */,
+				A36807D220F3D18A0074244A /* YKSelect.swift in Sources */,
+				A36807BF20F3CAA30074244A /* AppDelegate.swift in Sources */,
+				A3FCC81B20F94D2F00378250 /* DragDropDestinationView.swift in Sources */,
+				A38887EC21295469006B5488 /* ErrorViewController.swift in Sources */,
+				A36807D020F3CFDB0074244A /* YKAlgorithm.swift in Sources */,
+				A3FCC81D20F95BFB00378250 /* QRDetector.swift in Sources */,
+				B534888420F5CC2C0005EC9C /* YKPacket.swift in Sources */,
+				A3797C572105156E000048D0 /* YKDevice.swift in Sources */,
+				A3FCC81F20F9620D00378250 /* YKCredential.swift in Sources */,
+				B534888220F5C8C30005EC9C /* APDU.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A364F7782BFA79890048D7DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A36807BA20F3CAA30074244A /* ykoath */;
+			targetProxy = A364F7772BFA79890048D7DA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A36807C420F3CAA80074244A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A36807C520F3CAA80074244A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A364F7792BFA79890048D7DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = "";
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = net.dflab.ykoathTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Second Factor.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Second Factor";
+			};
+			name = Debug;
+		};
+		A364F77A2BFA79890048D7DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = "";
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MARKETING_VERSION = 1.0;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = net.dflab.ykoathTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Second Factor.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Second Factor";
+			};
+			name = Release;
+		};
+		A36807C920F3CAA80074244A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A36807CA20F3CAA80074244A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		A36807CC20F3CAA80074244A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ykoath/ykoath.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 4;
+				DEVELOPMENT_TEAM = 2ES475U856;
+				INFOPLIST_FILE = ykoath/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.3;
+				PRODUCT_BUNDLE_IDENTIFIER = net.dflab.ykoath;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "Second Factor";
+				SWIFT_INCLUDE_PATHS = "";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A36807CD20F3CAA80074244A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ykoath/ykoath.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 4;
+				DEVELOPMENT_TEAM = 2ES475U856;
+				INFOPLIST_FILE = ykoath/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.3;
+				PRODUCT_BUNDLE_IDENTIFIER = net.dflab.ykoath;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "Second Factor";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_INCLUDE_PATHS = "";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A364F77B2BFA79890048D7DA /* Build configuration list for PBXNativeTarget "ykoathTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A364F7792BFA79890048D7DA /* Debug */,
+				A364F77A2BFA79890048D7DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A36807B620F3CAA20074244A /* Build configuration list for PBXProject "ykoath" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A36807C920F3CAA80074244A /* Debug */,
+				A36807CA20F3CAA80074244A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A36807CB20F3CAA80074244A /* Build configuration list for PBXNativeTarget "ykoath" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A36807CC20F3CAA80074244A /* Debug */,
+				A36807CD20F3CAA80074244A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A36807B320F3CAA20074244A /* Project object */;
+}
