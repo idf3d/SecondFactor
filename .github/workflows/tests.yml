@@ -1,0 +1,15 @@
+name: Run tests
+on:
+  push:
+    paths-ignore:
+      - '*.md'
+  schedule:
+    - cron: '25 5 * * 0'
+jobs:
+  build:
+    runs-on: macos-latest
+    steps:
+      - name: Checkout sources
+        uses: actions/checkout@v4
+      - name: Build and test
+        run: xcodebuild clean build test -scheme ykoath CODE_SIGNING_ALLOWED='NO'
