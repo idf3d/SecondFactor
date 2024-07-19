@@ -11,15 +11,19 @@ import Cocoa
 class ViewController: NSViewController, NSTableViewDelegate, NSTableViewDataSource, DFTableViewMenuDelegate {
 
     var codes = [YKCredential]()
+    var filteredCodes = [YKCredential]()
+
     var message: String? = nil
 
-    @IBOutlet weak var tableView: NSTableView!
+    @IBOutlet weak var searchField: NSSearchField!
     @IBOutlet weak var indicator: NSProgressIndicator!
+    @IBOutlet weak var tableView: NSTableView!
 
     var timer: Timer? = nil
     var notificationToken: NSObjectProtocol? = nil
 
     override func viewDidAppear() {
+        searchField.delegate = self
         generate()
         let name = NSNotification.Name.YKNewCredentialAdded
         notificationToken = NotificationCenter.default.addObserver(forName: name, object: nil, queue: nil, using: { (notification) in
@@ -64,7 +68,7 @@ class ViewController: NSViewController, NSTableViewDelegate, NSTableViewDataSour
                     return
                 }
 
-                if let error = error {
+                if let error {
                     self.showMessage("Error.")
                     ErrorViewController.show(error)
                     self.stopTimer()
@@ -75,7 +79,7 @@ class ViewController: NSViewController, NSTableViewDelegate, NSTableViewDataSour
                     self.startTimer()
                 }
 
-                guard let codes = codes else {
+                guard let codes else {
                     self.showMessage("No supported credentials found")
                     return
                 }
@@ -115,6 +119,7 @@ class ViewController: NSViewController, NSTableViewDelegate, NSTableViewDataSour
                         sSelf.indicator.doubleValue = 0
                         sSelf.stopTimer()
                         sSelf.codes.removeAll()
+                        sSelf.filteredCodes.removeAll()
                         sSelf.tableView.reloadData()
                         sSelf.generate()
                         return
@@ -129,6 +134,7 @@ class ViewController: NSViewController, NSTableViewDelegate, NSTableViewDataSour
         DispatchQueue.main.async {
             self.message = str
             self.codes.removeAll()
+            self.filteredCodes.removeAll()
             self.tableView.reloadData()
         }
     }
@@ -155,6 +161,11 @@ class ViewController: NSViewController, NSTableViewDelegate, NSTableViewDataSour
         DispatchQueue.main.async {
             self.message = nil
             self.codes = codes
+            self.filteredCodes = codes.filter {
+                self.searchField.stringValue.isEmpty ||
+                $0.account.localizedCaseInsensitiveContains(self.searchField.stringValue) ||
+                $0.issuer?.localizedCaseInsensitiveContains(self.searchField.stringValue) ?? false
+            }
             self.tableView.reloadData()
         }
     }
@@ -163,7 +174,7 @@ class ViewController: NSViewController, NSTableViewDelegate, NSTableViewDataSour
         if message != nil {
             return 1
         } else {
-            return codes.count
+            return filteredCodes.count
         }
     }
 
@@ -177,11 +188,11 @@ class ViewController: NSViewController, NSTableViewDelegate, NSTableViewDataSour
             }
         }
 
-        guard codes.count > row else {
+        guard filteredCodes.count > row else {
             return nil
         }
 
-        let cred = codes[row]
+        let cred = filteredCodes[row]
 
         if tableColumn == tableView.tableColumns[0] {
             return cell("ServiceCell", text: cred.issuer ?? "")
@@ -199,7 +210,7 @@ class ViewController: NSViewController, NSTableViewDelegate, NSTableViewDataSour
     }
 
     func tableView(_ tableView: NSTableView, menuForRow: Int) -> NSMenu? {
-        guard let code = codes[menuForRow].code else {
+        guard let code = filteredCodes[menuForRow].code else {
             return nil
         }
 
@@ -216,26 +227,32 @@ class ViewController: NSViewController, NSTableViewDelegate, NSTableViewDataSour
         m.addItem(item)
 
         let deleteBlockAction: (AuthManager)-> Void = {(manager) in
-            manager.device.delete(self.codes[menuForRow], completion: { (error) in
+            let code = self.filteredCodes[menuForRow]
+            manager.device.delete(code, completion: { (error) in
                 if manager.handler()(error) {
                     return
                 }
 
-                if let error = error {
+                if let error {
                     ErrorViewController.show(error)
                     return
                 }
 
-                if self.codes.count >= menuForRow {
-                    self.codes.remove(at: menuForRow)
-                    self.showCodes(self.codes)
+                if let index = self.codes.firstIndex(of: code) {
+                    self.codes.remove(at: index)
                 }
+
+                if self.filteredCodes.count >= menuForRow {
+                    self.filteredCodes.remove(at: menuForRow)
+                }
+
+                self.showCodes(self.codes)
             })
         }
 
         let delete = Action {
             let vc = DeleteItemViewController.instance()
-            vc.item = self.codes[menuForRow]
+            vc.item = self.filteredCodes[menuForRow]
             vc.deleteAction = {
                 YKDevice.first(completion: { (dev, err) in
                     if let err = err {
@@ -268,5 +285,18 @@ class ViewController: NSViewController, NSTableViewDelegate, NSTableViewDataSour
         cell.textField?.stringValue = text
 
         return cell
+    }
+}
+
+extension ViewController: NSSearchFieldDelegate {
+    func controlTextDidChange(_ obj: Notification) {
+        guard obj.object as? NSSearchField == searchField else {
+            return
+        }
+        showCodes(codes)
+    }
+
+    func control(_ control: NSControl, textView: NSTextView, doCommandBy commandSelector: Selector) -> Bool {
+        return false
     }
 }

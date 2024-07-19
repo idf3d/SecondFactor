@@ -42,6 +42,7 @@
 		B534888220F5C8C30005EC9C /* APDU.swift in Sources */ = {isa = PBXBuildFile; fileRef = B534888120F5C8C30005EC9C /* APDU.swift */; };
 		B534888420F5CC2C0005EC9C /* YKPacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = B534888320F5CC2C0005EC9C /* YKPacket.swift */; };
 		B534888820F5D3090005EC9C /* APDUResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B534888720F5D3090005EC9C /* APDUResponse.swift */; };
+		B53F789F2C453CA70058C779 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = B53F789E2C453CA70058C779 /* Credits.rtf */; };
 		B55DB5D620FF4C5C00A771BD /* YKPut.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55DB5D520FF4C5C00A771BD /* YKPut.swift */; };
 		B5CD5ACC210A187100BB4B7D /* YKError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CD5ACB210A187100BB4B7D /* YKError.swift */; };
 /* End PBXBuildFile section */
@@ -96,6 +97,7 @@
 		B534888120F5C8C30005EC9C /* APDU.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APDU.swift; sourceTree = "<group>"; };
 		B534888320F5CC2C0005EC9C /* YKPacket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YKPacket.swift; sourceTree = "<group>"; };
 		B534888720F5D3090005EC9C /* APDUResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APDUResponse.swift; sourceTree = "<group>"; };
+		B53F789E2C453CA70058C779 /* Credits.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
 		B55DB5D520FF4C5C00A771BD /* YKPut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YKPut.swift; sourceTree = "<group>"; };
 		B5CD5ACB210A187100BB4B7D /* YKError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YKError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -216,6 +218,7 @@
 				A36807C420F3CAA80074244A /* Main.storyboard */,
 				A36807C720F3CAA80074244A /* Info.plist */,
 				A36807C820F3CAA80074244A /* ykoath.entitlements */,
+				B53F789E2C453CA70058C779 /* Credits.rtf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -340,6 +343,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A36807C320F3CAA80074244A /* Assets.xcassets in Resources */,
+				B53F789F2C453CA70058C779 /* Credits.rtf in Resources */,
 				A36807C620F3CAA80074244A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

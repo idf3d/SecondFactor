@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="22155"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="22690"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -670,13 +670,13 @@ Gw
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <scrollView autohidesScrollers="YES" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KM2-ar-u08">
-                                <rect key="frame" x="0.0" y="0.0" width="586" height="317"/>
+                                <rect key="frame" x="0.0" y="0.0" width="586" height="288"/>
                                 <clipView key="contentView" id="yn3-Ew-QER">
-                                    <rect key="frame" x="1" y="1" width="584" height="315"/>
+                                    <rect key="frame" x="1" y="1" width="584" height="286"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" rowSizeStyle="automatic" headerView="RNE-VR-Hri" viewBased="YES" id="kMv-dV-qjq" customClass="DFTableView" customModule="ykoath" customModuleProvider="target">
-                                            <rect key="frame" x="0.0" y="0.0" width="584" height="292"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="584" height="263"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <size key="intercellSpacing" width="3" height="2"/>
                                             <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -800,14 +800,25 @@ Gw
                                 </tableHeaderView>
                             </scrollView>
                             <progressIndicator wantsLayer="YES" maxValue="100" style="bar" translatesAutoresizingMaskIntoConstraints="NO" id="Ifm-97-Osb">
-                                <rect key="frame" x="0.0" y="316" width="586" height="20"/>
+                                <rect key="frame" x="5" y="288" width="576" height="20"/>
                             </progressIndicator>
+                            <searchField wantsLayer="YES" focusRingType="none" verticalHuggingPriority="750" textCompletion="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G7z-kc-6gW">
+                                <rect key="frame" x="5" y="308" width="576" height="22"/>
+                                <searchFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" borderStyle="bezel" usesSingleLineMode="YES" bezelStyle="round" sendsSearchStringImmediately="YES" id="PS9-k2-1XD">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </searchFieldCell>
+                            </searchField>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="Ifm-97-Osb" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" id="M65-M7-pCH"/>
-                            <constraint firstItem="Ifm-97-Osb" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" id="Ngi-oh-fQh"/>
-                            <constraint firstAttribute="trailing" secondItem="Ifm-97-Osb" secondAttribute="trailing" id="Upk-EE-feJ"/>
-                            <constraint firstItem="KM2-ar-u08" firstAttribute="top" secondItem="Ifm-97-Osb" secondAttribute="bottom" id="Wfy-Sw-dlS"/>
+                            <constraint firstAttribute="trailing" secondItem="G7z-kc-6gW" secondAttribute="trailing" constant="5" id="5cy-h6-WSl"/>
+                            <constraint firstItem="G7z-kc-6gW" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="5" id="BCy-e0-Hrx"/>
+                            <constraint firstItem="Ifm-97-Osb" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="5" id="M65-M7-pCH"/>
+                            <constraint firstAttribute="trailing" secondItem="Ifm-97-Osb" secondAttribute="trailing" constant="5" id="Upk-EE-feJ"/>
+                            <constraint firstItem="KM2-ar-u08" firstAttribute="top" secondItem="Ifm-97-Osb" secondAttribute="bottom" constant="1" id="Wfy-Sw-dlS"/>
+                            <constraint firstItem="G7z-kc-6gW" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="5" id="dzS-av-Xnq"/>
+                            <constraint firstItem="Ifm-97-Osb" firstAttribute="top" secondItem="G7z-kc-6gW" secondAttribute="bottom" constant="1" id="fQB-c0-FKe"/>
                             <constraint firstAttribute="trailing" secondItem="KM2-ar-u08" secondAttribute="trailing" id="uYY-qM-mzj"/>
                             <constraint firstItem="KM2-ar-u08" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" id="vqm-0D-xjf"/>
                             <constraint firstAttribute="bottom" secondItem="KM2-ar-u08" secondAttribute="bottom" id="xTm-Wv-OIy"/>
@@ -815,6 +826,7 @@ Gw
                     </view>
                     <connections>
                         <outlet property="indicator" destination="Ifm-97-Osb" id="8kr-EF-dD0"/>
+                        <outlet property="searchField" destination="G7z-kc-6gW" id="EeS-0w-9Ii"/>
                         <outlet property="tableView" destination="kMv-dV-qjq" id="LO7-xA-4j3"/>
                     </connections>
                 </viewController>

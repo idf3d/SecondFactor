@@ -184,3 +184,16 @@ class YKCredential {
         return result
     }
 }
+
+extension YKCredential: Equatable {
+    static func == (lhs: YKCredential, rhs: YKCredential) -> Bool {
+        lhs.type == rhs.type &&
+        lhs.issuer == rhs.issuer &&
+        lhs.account == rhs.account &&
+        lhs.algorithm == rhs.algorithm &&
+        lhs.secret == rhs.secret &&
+        lhs.digits == rhs.digits &&
+        lhs.period == rhs.period &&
+        lhs.rawCode == rhs.rawCode
+    }
+}
